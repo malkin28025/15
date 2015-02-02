@@ -31,12 +31,12 @@ ActiveRecord::Schema.define(version: 20150128204855) do
 
   create_table "games", force: :cascade do |t|
     t.datetime "date"
-    t.integer  "home_team_id_"
+    t.integer  "home_team_id"
     t.integer  "away_team_id"
     t.integer  "home_score"
     t.integer  "away_score"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "states", force: :cascade do |t|
